@@ -1,5 +1,5 @@
 /**
- * Copyright (C) Roberto Metere. All rights reserved.
+ * Copyright (C) 2018 Roberto Metere
  *
  * Redistribution and use of this script, with or without modification, is
  * permitted provided that the following conditions are met:
