@@ -95,7 +95,9 @@ std::vector<std::vector<wchar_t> > UpsideDown::convMap = {
   { '1', L'\u01c0' },
 //   { '1', L'\u07c7' },
 //   { '1', L'\ua781' },
+//   { '1', L'\u21c2' },
   { '2', L'\u218a' },
+//   { '2', L'\u2d52' },
   { '3', L'\u218b' },
   { '4', L'\u07c8' },
 //   { '5', L'\u0ea3' },
@@ -109,7 +111,8 @@ std::vector<std::vector<wchar_t> > UpsideDown::convMap = {
   
   // Puntuaction & symbols
   { '.', L'\u02d9' },
-  { ',', L'\u2e32' }, //     { '\'', ',' },
+  { ',', L'\u2018' },
+  { '\'', L'\u2e32' },
   //     { ':', ':' },
   { ';', L'\u2e35' },
   //     { '-', '-' },
