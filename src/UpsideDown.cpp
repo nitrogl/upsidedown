@@ -41,10 +41,12 @@ std::vector<std::vector<wchar_t> > UpsideDown::convMap = {
   // { u'g', u'\u0253' },
   { u'h', u'\u0265' }, // ɥ Latin Small Letter Turned H
   { u'i', u'\u1d09' }, // ᴉ Latin Small Letter Turned I
-  { u'j', u'\u027e' },
+  { u'j', u'\u23a7' }, // ⎧ Left curly bracket upper hook
+  // { u'j', u'\u1e5b' }, // ṛ Latin small letter r with dot below
+  // { u'j', u'\u027e' },
   { u'k', u'\u029e' }, // ʞ Latin Small Letter Turned K
   { u'l', u'\ua781' }, // ꞁ Latin Small Letter Turned L
-  //     { u'l', u'\u0285' },
+  //   { u'l', u'\u0285' },
   //   { u'l', u'\u056c' },
   { u'm', u'\u026f' }, // ɯ Latin Small Letter Turned M
   { u'n', 'u' },
