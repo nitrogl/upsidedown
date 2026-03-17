@@ -30,120 +30,130 @@
  */
 std::vector<std::vector<wchar_t> > UpsideDown::convMap = {
   // Small letters
-  { 'a', L'\u0250' },
-  { 'b', 'q' },
-  { 'c', L'\u0254' },
-  //     { 'd', 'p' },
-  { 'e', L'\u0259' },
-  { 'f', L'\u025f' },
-  { 'g', L'\u0253' },
-  { 'h', L'\u0265' },
-  { 'i', L'\u1d09' },
-  { 'j', L'\u027e' },
-  { 'k', L'\u029e' },
-  { 'l', L'\ua781' },
-  //     { 'l', L'\u0285' },
-  //   { 'l', L'\u056c' },
-  { 'm', L'\u026f' },
-  { 'n', 'u' },
-  //     { 'o', 'o' },
-  { 'p', 'd' },
-  //     { 'q', 'b' },
-  { 'r', L'\u0279' },
-  //     { 's', 's' },
-  { 't', L'\u0287' },
-  //     { 'u', 'n' },
-  { 'v', L'\u028c' },
-  { 'w', L'\u028d' },
-  //     { 'x', 'x' },
-  { 'y', L'\u028e' },
-  //     { 'z', 'z' },
+  { u'a', u'\u0250' }, // ɐ Latin Small Letter Turned A
+  { u'b', 'q' },
+  { u'c', u'\u0254' }, // ɔ Latin Small Letter Open O
+  //     { u'd', 'p' },
+  { u'e', u'\u01dd' }, // ǝ Latin Small Letter Turned E
+  // { u'e', u'\u0259' },
+  { u'f', u'\u025f' }, // ɟ Latin Small Letter Dotless J with Stroke
+  { u'g', u'\u1d77' }, // ᵷ Latin Small Letter Turned G
+  // { u'g', u'\u0253' },
+  { u'h', u'\u0265' }, // ɥ Latin Small Letter Turned H
+  { u'i', u'\u1d09' }, // ᴉ Latin Small Letter Turned I
+  { u'j', u'\u027e' },
+  { u'k', u'\u029e' }, // ʞ Latin Small Letter Turned K
+  { u'l', u'\ua781' }, // ꞁ Latin Small Letter Turned L
+  //     { u'l', u'\u0285' },
+  //   { u'l', u'\u056c' },
+  { u'm', u'\u026f' }, // ɯ Latin Small Letter Turned M
+  { u'n', 'u' },
+  //     { u'o', 'o' },
+  { u'p', 'd' },
+  //     { u'q', 'b' },
+  { u'r', u'\u0279' }, // ɹ Latin Small Letter Turned R
+  //     { u's', 's' },
+  { u't', u'\u0287' }, // ʇ Latin Small Letter Turned T
+  //     { u'u', 'n' },
+  { u'v', u'\u028c' }, // ʌ Latin Small Letter Turned V
+  { u'w', u'\u028d' }, // ʍ Latin Small Letter Turned W
+  //     { u'x', 'x' },
+  { u'y', u'\u028e' }, // ʎ Latin Small Letter Turned Y
+  //     { u'z', 'z' },
   
   // Capital letters
-  { 'A', L'\u2c6f' },
-  { 'B', L'\u15fa' },
-  { 'C', L'\u0186' },
-  { 'D', L'\u15e1' },
-  { 'E', L'\u018e' },
-  //     { 'F', L'\u15b5' },
-  { 'F', L'\u07c3' },
-  { 'G', L'\u2141' },
-  //     { 'H', 'H' },
-  //     { 'I', 'I' },
-  { 'J', L'\u017f' },
-  //     { 'K', L'\u22ca' },
-  { 'K', L'\u0c6b' },
-  //     { 'L', L'\u2142' },
-  { 'L', L'\u14a3' },
-  { 'M', 'W' },
-  //     { 'N', 'N' },
-  //     { 'O', 'O' },
-  { 'P', L'\u0500' },
-  { 'Q', L'\u10e2' },
-  { 'R', L'\u1d1a' },
-  //     { 'S', 'S' },
-  { 'T', L'\u22a5' },
-  { 'U', L'\u2229' },
-  { 'V', L'\u0245' },
-  //     { 'W', 'M' },
-  //     { 'X', 'X' },
-  { 'Y', L'\u2144' },
-  //     { 'Z', 'Z' },
+  { u'A', u'\u2c6f' }, // Ɐ Latin Capital Letter Turned A
+  { u'B', u'\u15fa' },
+  { u'C', u'\u0186' }, // Ɔ Latin Capital Letter Open O
+  { u'D', u'\u15e1' },
+  { u'E', u'\u018e' }, // Ǝ Latin Capital Letter Reversed E
+  //     { u'F', u'\u15b5' },
+  { u'F', u'\u2132' }, // Ⅎ Turned Capital F
+  // { u'F', u'\u07c3' },
+  { u'G', u'\u2141' }, // ⅁ Turned Sans-Serif Capital G
+  //     { u'H', 'H' },
+  //     { u'I', 'I' },
+  { u'J', u'\u017f' },
+  { u'K', u'\ua7b0' }, // Ʞ Latin Capital Letter Turned K
+  // { u'K', u'\u0c6b' },
+  //     { u'K', u'\u22ca' },
+  //     { u'L', u'\u2142' },
+  { u'L', u'\ua780' }, // Ꞁ Latin Capital Letter Turned L
+  // { u'L', u'\u2142' }, // ⅂ Turned Sans-Serif Capital L
+  // { u'L', u'\u14a3' },
+  { u'M', u'\u019c' }, // Ɯ Latin Capital Letter Turned M
+  // { u'M', 'W' },
+  //     { u'N', 'N' },
+  //     { u'O', 'O' },
+  { u'P', u'\u0500' },
+  { u'Q', u'\u10e2' },
+  { u'R', u'\u1d1a' }, // ᴚ Latin Letter Small Capital Turned R
+  //     { u'S', 'S' },
+  { u'T', u'\ua7b1' }, // Ʇ Latin Capital Letter Turned T
+  // { u'T', u'\u22a5' },
+  { u'U', u'\u2229' },
+  { u'V', u'\u0245' }, // Ʌ Latin Capital Letter Turned V
+  //     { u'W', 'M' },
+  //     { u'X', 'X' },
+  { u'Y', u'\u2144' }, // ⅄ Turned Sans-Serif Capital Y
+  //     { u'Z', 'Z' },
   
   // Numbers
-  //     { '0', '0' },
-  { '1', L'\u01c0' },
-//   { '1', L'\u07c7' },
-//   { '1', L'\ua781' },
-//   { '1', L'\u21c2' },
-  { '2', L'\u218a' },
-//   { '2', L'\u2d52' },
-  { '3', L'\u218b' },
-  { '4', L'\u07c8' },
-//   { '5', L'\u0ea3' },
-  { '6', '9' },
-  { '7', L'\u14aa' },
-//   { '7', L'\u07c4' },
-//   { '7', L'\u2220' },
-  //     { '7', L'\u2c62' },
-  //     { '8', '8' },
-  //     { '9', '6' },
+  //     { u'0', '0' },
+  { u'1', u'\u01c0' },
+//   { u'1', u'\u07c7' },
+//   { u'1', u'\ua781' },
+//   { u'1', u'\u21c2' },
+  { u'2', u'\u218a' },
+//   { u'2', u'\u2d52' },
+  { u'3', u'\u218b' },
+  { u'4', u'\u07c8' },
+//   { u'5', u'\u0ea3' },
+  { u'6', '9' },
+  { u'7', u'\u14aa' },
+//   { u'7', u'\u07c4' },
+//   { u'7', u'\u2220' },
+  //     { u'7', u'\u2c62' },
+  //     { u'8', '8' },
+  //     { u'9', '6' },
   
   // Puntuaction & symbols
-  { '.', L'\u02d9' },
-  { ',', L'\u2018' },
-  { '\'', L'\u2e32' },
-  //     { ':', ':' },
-  { ';', L'\u2e35' },
-  //     { '-', '-' },
-  { '_', L'\u203e' },
-  //     { '#', '#' },
-  { '@', '@' },
-  //     { '+', '+' },
-  //     { '*', '*' },
-  { '?', L'\u00bf' },
-  //     { '=', '=' },
-  { ')', '(' },
-  //     { '(', ')' },
-  { '/', '\\' },
-  { '&', L'\u214b' },
-  //     { '%', '%' },
-  //     { '$', '$' },
-  { '"', L'\u201e' },
-  { '!', L'\u00a1' }, //     { L'\u00a1', '!' },
-  //     { '|', '|' },
-  //     { '\\', '/' },
-  { '<', '>' }, //     { '>', '<' },
-  { '[', ']' }, //     { ']', '[' },
-  { '{', '}' }, //     { '}', '{' },
-  //     { '', '' },
-  //     { '', '' },
-  //     { '', '' },
-  //     { '', '' },
+  { u'.', u'\u02d9' },
+  { u',', u'\u2018' },
+  { u'\'', u'\u2e32' },
+  //     { u':', ':' },
+  { u';', u'\u2e35' },
+  //     { u'-', '-' },
+  { u'_', u'\u203e' },
+  //     { u'#', '#' },
+  { u'@', '@' },
+  //     { u'+', '+' },
+  //     { u'*', '*' },
+  { u'?', u'\u00bf' },
+  //     { u'=', '=' },
+  { u')', '(' },
+  //     { u'(', ')' },
+  { u'/', '\\' },
+  { u'&', u'\u214b' },
+  //     { u'%', '%' },
+  //     { u'$', '$' },
+  { u'"', u'\u201e' },
+  { u'!', u'\u00a1' }, //     { u'\u00a1', '!' },
+  //     { u'|', '|' },
+  //     { u'\\', '/' },
+  { u'<', '>' }, //     { u'>', '<' },
+  { u'[', ']' }, //     { u']', '[' },
+  { u'{', '}' }, //     { u'}', '{' },
+  //     { u'', '' },
+  //     { u'', '' },
+  //     { u'', '' },
+  //     { u'', '' },
   
   
   // Some else
-  { L'\u00df', L'\u0a88' } // ss german
+  { u'\u00df', u'\u0a88' } // ss german
+  
+  // Chess will be char32
 };
 
 /**
